@@ -13,3 +13,10 @@ XN-L PM 체크리스트 웹앱 · 배포 안내
 파일 구성
  index.html / app.js / common.js(점검 항목·판정·보고서) / config.js(메일 주소)
  sw.js(오프라인 캐시) / manifest.webmanifest / icons/ / vendor/(PDF 생성 라이브러리)
+
+설치(Installation) 체크리스트 (install/ 폴더)
+ 주소: 이 앱 주소 뒤에 install/ 를 붙이면 됩니다. (예: https://sinhr89.github.io/xnl-pm-checklist/install/)
+ PM 체크리스트와 따로 설치되는 별도 앱이며(초록색 아이콘), 입력 내용도 따로 저장됩니다.
+ 두 앱 위쪽의 버튼으로 서로 이동할 수 있습니다.
+ 메일 받는 사람은 PM과 같은 config.js를 함께 씁니다.
+ install/ : index.html / app.js / common.js(설치 항목·보고서) / sw.js / manifest.webmanifest / icons/

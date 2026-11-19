@@ -1,5 +1,5 @@
-/* XN-L PM 체크리스트 · 오프라인 캐시 (버전 a35397b7b8) */
-var CACHE="xnl-pm-a35397b7b8";
+/* XN-L PM 체크리스트 · 오프라인 캐시 (버전 87d1f81cb7) */
+var CACHE="xnl-pm-87d1f81cb7";
 var FILES=["./", "index.html", "app.js", "common.js", "config.js", "vendor/html2pdf.bundle.min.js", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"];
 self.addEventListener("install",function(e){e.waitUntil(caches.open(CACHE).then(function(c){return c.addAll(FILES)}).then(function(){return self.skipWaiting()}))});
 self.addEventListener("activate",function(e){e.waitUntil(caches.keys().then(function(ks){return Promise.all(ks.filter(function(k){return k!==CACHE&&k.indexOf("xnl-pm-")===0}).map(function(k){return caches.delete(k)}))}).then(function(){return self.clients.claim()}))});
